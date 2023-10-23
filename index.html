@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Engine WK5 Homework</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/b6a9693069.js" crossorigin="anonymous"> </script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="weather-app-outline">
+        <form id="search-form">
+        <div class="row">
+            <div class="col-9">
+
+<div class="input-group">
+  <input type="text" 
+  class="form-control city" 
+  id="search-text-input" 
+  placeholder="Enter city..." 
+  autocomplete="off"
+  autofocus="on"
+  
+  />
+  
+  <button input type="submit" value="search" class="btn btn-outline-secondary" type="button"><i class="fa-solid fa-magnifying-glass search"></i></button>
+  <button class="btn btn-outline-secondary" id="current-location-button" type="button"><i class="fa-solid fa-location-arrow location"></i></button>
+</div>
+  </div>
+  
+  </form>
+<br />
+<br />
+<h1 id="city-name">London</h1>
+<!-- <h6>CURRENT WEATHER</h6> -->
+<h7 id="current-date"></h7>
+<h6 id="current-time"></h6>
+<div class="card current-weather">
+    <h2>
+        <span class="temp">
+          <span class="weather-icon">
+          <i class="fa-solid fa-cloud fa-beat" style="color: #f2f2f2;"></i>
+          </span>
+           <span class="temperature" id="temperature">15</span>
+        </span>
+    </h2>
+    <span class="unit">
+    <a href="#" id="celsius">°C</a> |
+                  <a href="#" id="fahrenheit">°F</a></span
+     </span>
+    <span class="current-weather-description" id="weather-description">
+        Cloudy
+    </span>
+</div>
+
+<div class="row weather-predictions">
+        <p id="current-feel">🌡️Feels like: 10°C</p>
+        <p id="current-humidity">💧 Humidity: 77%</p>
+        <p id="current-wind" >💨 Wind Speed: 8 km/h</p>
+        </div>
+
+<div class="row weather-forecast">
+      <div class="col-2">
+        <div class="weather-forecast-date">SUN</div>
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">18°</span>
+          <br />
+          <span class="lowest-temp">9°</span>
+        </div>
+      </div>
+ 
+      <div class="col-2">
+        <div class="weather-forecast-date">MON</div>
+        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">12°</span>
+          <br />
+          <span class="lowest-temp">6°</span>
+        </div>
+      </div>
+  
+      <div class="col-2">
+        <div class="weather-forecast-date">TUE</div>
+        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">15°</span>
+          <br />
+          <span class="lowest-temp">7°</span>
+        </div>
+      </div>
+  
+      <div class="col-2">
+        <div class="weather-forecast-date">WED</div>
+        <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">11°</span>
+          <br />
+          <span class="lowest-temp">5°</span>
+        </div>
+      </div>
+  
+      <div class="col-2">
+        <div class="weather-forecast-date">THU</div>
+        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">18°</span>
+          <br />
+          <span class="lowest-temp">9°</span>
+        </div>
+      </div>
+  
+      <div class="col-2">
+        <div class="weather-forecast-date">FRI</div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">14°</span>
+          <br />
+          <span class="lowest-temp">6°</span>
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
