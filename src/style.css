@@ -171,3 +171,14 @@ img {
   right: 18px;
   text-align: center;
 }
+
+.sign-off {
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+}
+.sign-off a {
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+}
