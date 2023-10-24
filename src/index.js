@@ -74,7 +74,7 @@ function showTemperature(response) {
   let currentWind = document.querySelector("#current-wind");
   currentWind.innerHTML = `💨 Wind: ${wind}km/h`;
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 }
 
 let changeCity = document.querySelector("#city-name");
