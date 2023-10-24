@@ -170,6 +170,7 @@ img {
   top: -10px;
   right: 18px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .sign-off {
