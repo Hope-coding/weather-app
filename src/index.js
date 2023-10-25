@@ -57,6 +57,8 @@ function searchCity(city) {
   axios.get(`${url}&appid=${apiKey}`).then(showTemperature);
 }
 
+searchCity("London");
+
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let condition = document.querySelector("#temperature");
