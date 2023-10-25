@@ -64,9 +64,11 @@ function showTemperature(response) {
   let feel = Math.round(response.data.main.feels_like);
   let humid = response.data.main.humidity;
   let wind = Math.round(response.data.wind.speed);
+  let cityElement = document.querySelector("#city-name");
 
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = response.data.name;
+  cityElement.innerHTML = response.data.name;
+  // let h1 = document.querySelector("h1");
+  // h1.innerHTML = response.data.name;
   let currentFeel = document.querySelector("#current-feel");
   currentFeel.innerHTML = `🌡️ Feels like: ${feel}°C`;
   let currentHumidity = document.querySelector("#current-humidity");
@@ -75,6 +77,12 @@ function showTemperature(response) {
   currentWind.innerHTML = `💨 Wind: ${wind}km/h`;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let changeCity = document.querySelector("#city-name");

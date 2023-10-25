@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Search Engine WK5 Homework</title>
+    <title>Vanilla Weather App</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -55,22 +55,23 @@
 <h7 id="current-date"></h7>
 <h6 id="current-time"></h6>
 <div class="card current-weather">
-    <h2>
-        <span class="temp">
+    
+        
           <span class="weather-icon">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" id="icon" />
+          <!-- <span class="weather-icon" id="icon">
           <i class="fa-solid fa-cloud fa-beat" style="color: #f2f2f2;"></i>
-          </span>
-           <span class="temperature" id="temperature">7</span>
+          </span> -->
         </span>
-    </h2>
-    <span class="unit">
-    <a href="#" id="celsius">°C</a> |
-                  <a href="#" id="fahrenheit">°F</a></span
-     </span>
-    <span class="current-weather-description" id="weather-description">
-        Cloudy
-    </span>
-</div>
+           <span class="temperature" id="temperature">7</span>
+
+           <span class="unit">
+              <a href="#" id="celsius">°C</a> |
+              <a href="#" id="fahrenheit">°F</a></span>
+              <span class="current-weather-description" id="weather-description">
+                  Cloudy
+              </span>
+        </div>
 
 <div class="row weather-predictions">
         <p id="current-feel">🌡️Feels like: 10°C</p>
