@@ -47,7 +47,6 @@ function search(event) {
   let input = document.querySelector("#search-text-input");
   searchCity(input.value);
 }
-
 searchCity("London");
 
 function searchCity(city) {

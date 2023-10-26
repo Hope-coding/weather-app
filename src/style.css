@@ -85,8 +85,8 @@ img {
   position: relative;
   margin: 0px auto;
   text-align: center;
-  right: 10px;
-  top: 1px;
+  right: -5px;
+  top: -70px;
 }
 
 .col-2 {
@@ -114,8 +114,8 @@ img {
 
 .weather-icon {
   position: relative;
-  left: -8px;
-  top: -18px;
+  left: -50px;
+  top: 18px;
 }
 
 .weather-card-temp {
@@ -154,8 +154,8 @@ img {
   font-size: 15px;
   font-weight: 900;
   position: relative;
-  top: -10px;
-  left: 5px;
+  top: -97px;
+  left: 2px;
   text-transform: capitalize;
   text-wrap: wrap;
 }
@@ -172,8 +172,8 @@ img {
 .unit {
   color: #464646;
   position: relative;
-  top: -25px;
-  right: 8px;
+  top: -142px;
+  right: -48px;
   font-size: 14px;
 }
 
