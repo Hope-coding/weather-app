@@ -41,12 +41,38 @@ let month = months[now.getMonth()];
 h7.innerHTML = `${day} ${date} ${month}`;
 h6.innerHTML = `${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#week-forecast");
+
+  let days = ["Fri", "Sat", "Sun", "Mon"];
+  let forecast = `<div class="row weather-forecast">`;
+
+  days.forEach(function (day) {
+    forecast =
+      forecast +
+      `<div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+        <div class="weather-forecast-temp">
+          <span class="highest-temp">18°</span>
+          <br />
+          <span class="lowest-temp">9°</span>
+        </div>
+      </div>`;
+  });
+
+  forecast = forecast + `</div>`;
+  forecastElement.inner = forecast;
+  console.log(forecast);
+}
+
 // Search City
 function search(event) {
   event.preventDefault();
   let input = document.querySelector("#search-text-input");
   searchCity(input.value);
 }
+
 searchCity("London");
 
 function searchCity(city) {
@@ -133,3 +159,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
