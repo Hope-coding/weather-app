@@ -62,7 +62,7 @@ function displayForecast() {
   });
 
   forecast = forecast + `</div>`;
-  forecastElement.inner = forecast;
+  forecastElement.innerHTML = forecast;
   console.log(forecast);
 }
 
