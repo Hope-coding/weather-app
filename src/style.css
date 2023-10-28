@@ -103,13 +103,13 @@ img {
 }
 
 .highest-temp {
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .highest-temp,
 .lowest-temp {
   font-size: 12px;
-  color: #fafafa;
+  color: #dfdfdf;
 }
 
 .weather-icon {
@@ -173,7 +173,7 @@ img {
   color: #464646;
   position: relative;
   top: -142px;
-  right: -38px;
+  right: -48px;
   font-size: 14px;
 }
 
