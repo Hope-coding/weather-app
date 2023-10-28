@@ -54,15 +54,16 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#week-forecast");
 
-  let days = ["Fri", "Sat", "Sun", "Mon"];
-  let forecast = `<div class="row weather-forecast">`;
-
-  days.forEach(function (day) {
-    forecast =
-      forecast +
-      `<div class="col-2">
-        <div class="weather-forecast-date">${day}</div>
-        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+  let forecastCards = `<div class="row">`;
+  forecast.forEach(function (forecastDay, index) {
+    if (index > 0 && index < 7) {
+      forecastCards =
+        forecastCards +
+        `<div class="col-2">
+        <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+        <img src="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }@2x.png" alt="">
         <div class="weather-forecast-temp">
           <span class="highest-temp">${Math.round(forecastDay.temp.max)}°</span>
           <br />

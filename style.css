@@ -85,8 +85,8 @@ img {
   position: relative;
   margin: 0px auto;
   text-align: center;
-  right: -5px;
-  top: -70px;
+  right: 20px;
+  top: 5px;
 }
 
 .col-2 {
@@ -112,10 +112,23 @@ img {
   color: #dfdfdf;
 }
 
+.unit {
+  color: #ffffff;
+  position: relative;
+  top: -70px;
+  right: -85px;
+  font-size: 14px;
+}
+
+.unit a {
+  color: #a3054f;
+  text-decoration: none;
+}
+
 .weather-icon {
   position: relative;
-  left: -50px;
-  top: 18px;
+  left: -30px;
+  top: -8px;
 }
 
 .weather-card-temp {
@@ -151,42 +164,10 @@ img {
   color: #464646;
   font-family: "Roboto Mono", monospace;
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 900;
   position: relative;
-  top: -97px;
-  left: 2px;
-  text-transform: capitalize;
-  text-wrap: wrap;
-}
-
-.sign-off {
+  top: -10px;
+  right: 18px;
   text-align: center;
-  font-size: 12px;
-  text-decoration: none;
-}
-.sign-off a {
-  text-decoration: none;
-}
-
-.unit {
-  color: #464646;
-  position: relative;
-  top: -142px;
-  right: -48px;
-  font-size: 14px;
-}
-
-.unit a {
-  color: #464646;
-  text-decoration: none;
-}
-
-.unit .active {
-  color: #ffffff;
-  cursor: default;
-}
-
-.unit .active:hover {
-  text-decoration: none;
 }
