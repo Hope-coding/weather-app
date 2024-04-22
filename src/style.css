@@ -8,22 +8,22 @@ h1 {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-style: italic;
-  font-size: 65px;
+  font-size: 45px;
 }
 
 h6 {
   color: #2c2c2c;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 30px;
   line-height: 30px;
 }
 
 h7 {
   color: #2c2c2c;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 35px;
   line-height: 30px;
 }
 
