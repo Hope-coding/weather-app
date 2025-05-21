@@ -79,8 +79,8 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "197ef3a642b76eef90e131866f74a0a0";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKey = "fa3f2cd24bo2f480851bd6ec4b0t2c4e";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon={lon}&lat={lat}&key={key}`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -94,8 +94,8 @@ function search(event) {
 searchCity("London");
 
 function searchCity(city) {
-  let apiKey = "197ef3a642b76eef90e131866f74a0a0";
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
+  let apiKey = "fa3f2cd24bo2f480851bd6ec4b0t2c4e";
+  let url = `https://api.shecodes.io/weather/v1/current?query={query}&key={key}`;
   axios.get(`${url}&appid=${apiKey}`).then(showTemperature);
 }
 
@@ -143,7 +143,7 @@ function getPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let units = "metric";
-  let apiKey = "197ef3a642b76eef90e131866f74a0a0";
+  let apiKey = "fa3f2cd24bo2f480851bd6ec4b0t2c4e";
   let apiPoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiUrl = `${apiPoint}?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
